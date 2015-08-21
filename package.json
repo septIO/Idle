@@ -1,0 +1,22 @@
+{
+  "name": "Idle",
+  "version": "0.0.1",
+  "description": "An idle game with no name yet",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/septIO/idle"
+  },
+  "author": "Kasper Laukamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/septIO/idle/issues"
+  },
+  "homepage": "https://github.com/septIO/idle",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "bootstrap": "^3.3.5",
+    "browserify": "^11.0.1",
+    "express": "^4.13.3"
+  }
+}
