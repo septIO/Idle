@@ -1,0 +1,30 @@
+@mixin prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin outline-text($color:#000, $width:1px, $spread:0){
+  text-shadow:
+  (-$width) (-$width) $spread $color, 
+  $width (-$width) $spread $color, 
+  (-$width) $width $spread $color, 
+  $width  $width $spread $color
+}
+
+@mixin padding-classes{
+  $intervals : 5 10 15 20 25 30 40 50 60 70 80 90 100;
+  $sides : top right bottom left;
+  @each $i in $intervals{
+    .pad#{$i}{
+      padding:#{$i}px;
+    }
+    @each $s in $sides{
+      .pad-#{$s}#{$i}{
+        padding-#{$s}:#{$i}px;
+      }
+    }
+  }
+}
