@@ -28,3 +28,9 @@
     }
   }
 }
+
+@mixin sprite($x, $y){
+  background-image: url('../images/sprite.png');
+  background-position: #{$x} #{$y};
+  background-size: contain;
+}
